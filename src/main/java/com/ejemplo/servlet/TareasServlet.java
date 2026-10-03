@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "TareasServlet", urlPatterns = {"/tareas"})
+@WebServlet(name = "TareasServlet", urlPatterns = {"/tareas"}, loadOnStartup = 1)
 public class TareasServlet extends HttpServlet {
 
     // Estado compartido de toda la aplicación (no dato de una petición),
